@@ -1,0 +1,47 @@
+/* Canonical Watchmen theme tokens.
+ * Export both Omarchy-style names and Base16 aliases so generated and hand-written
+ * theme consumers can read the same palette without drift.
+ */
+
+/* Omarchy/UI tokens */
+@define-color accent #246d96;
+@define-color cursor #dfc0b0;
+@define-color foreground #ceb8b0;
+@define-color background #2c2d37;
+@define-color selection_foreground #2c2d37;
+@define-color selection_background #246d96;
+
+@define-color color0 #2c2d37;
+@define-color color1 #af396f;
+@define-color color2 #adc4b3;
+@define-color color3 #a86a3e;
+@define-color color4 #9287b0;
+@define-color color5 #ad93b7;
+@define-color color6 #6e7b8c;
+@define-color color7 #ceb8b0;
+@define-color color8 #55595d;
+@define-color color9 #d8979a;
+@define-color color10 #a8bfb8;
+@define-color color11 #d2833b;
+@define-color color12 #4e6aa0;
+@define-color color13 #b1a9c2;
+@define-color color14 #8eb3c0;
+@define-color color15 #dfc0b0;
+
+/* Base16 aliases */
+@define-color base00 #2c2d37;
+@define-color base01 #482A56;
+@define-color base02 #55595d;
+@define-color base03 #726764;
+@define-color base04 #aea8a9;
+@define-color base05 #ceb8b0;
+@define-color base06 #d8aaad;
+@define-color base07 #dfc0b0;
+@define-color base08 #af396f;
+@define-color base09 #a86a3e;
+@define-color base0A #d2833b;
+@define-color base0B #adc4b3;
+@define-color base0C #8eb3c0;
+@define-color base0D #9287b0;
+@define-color base0E #ad93b7;
+@define-color base0F #81544e;
