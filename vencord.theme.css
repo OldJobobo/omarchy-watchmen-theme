@@ -1,8 +1,8 @@
 /**
-* @name base16 Discord
+* @name Watchmen
 * @author @bypass_
 * @version 0.1.0
-* @description Built using Aether and Pywal
+* @description Match the Watchmen Omarchy palette.
 * @source https://github.com/imbypass/base16-Discord
 **/
 
@@ -11,12 +11,12 @@
 
 :root {
     --color00: #2c2d37;
-    --color01: #af396f;
+    --color01: #c13e46;
     --color02: #adc4b3;
-    --color03: #a86a3e;
+    --color03: #b89030;
     --color04: #9287b0;
     --color05: #ad93b7;
-    --color06: #6e7b8c;
+    --color06: #238e9e;
     --color07: #ceb8b0;
     --color08: #55595d;
     --color09: #d8979a;

@@ -1,5 +1,5 @@
-name: Aether
-accent: "#246d96"
+name: Watchmen
+accent: "#2488cb"
 cursor: "#dfc0b0"
 background: "#2c2d37"
 foreground: "#ceb8b0"
@@ -8,12 +8,12 @@ details: darker
 terminal_colors:
   normal:
     black:   "#2c2d37"
-    red:     "#af396f"
+    red:     "#c13e46"
     green:   "#adc4b3"
-    yellow:  "#a86a3e"
+    yellow:  "#b89030"
     blue:    "#9287b0"
     magenta: "#ad93b7"
-    cyan:    "#6e7b8c"
+    cyan:    "#238e9e"
     white:   "#ceb8b0"
   bright:
     black:   "#55595d"

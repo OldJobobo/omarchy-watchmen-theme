@@ -1,27 +1,27 @@
 /**
- * Aether Theme with Sharp Corners (Hyprland-inspired)
+ * Watchmen Theme with Sharp Corners (Hyprland-inspired)
  * GTK4/Adwaita Custom Styling
  */
 
-/* Dynamic color palette from Aether */
+/* Dynamic color palette from Watchmen */
 @define-color background #2c2d37;
 @define-color foreground #ceb8b0;
 
 @define-color black #2c2d37;
-@define-color red #c83c61;
+@define-color red #c13e46;
 @define-color green #adc4b3;
-@define-color yellow #a86a3e;
-@define-color blue #3a5f87;
+@define-color yellow #b89030;
+@define-color blue #9287b0;
 @define-color magenta #ad93b7;
 @define-color cyan #238e9e;
 @define-color white #ceb8b0;
 @define-color bright_black #55595d;
-@define-color bright_red #d93c76;
+@define-color bright_red #d8979a;
 @define-color bright_green #a8bfb8;
 @define-color bright_yellow #d2833b;
-@define-color bright_blue #246d96;
+@define-color bright_blue #2488cb;
 @define-color bright_magenta #b1a9c2;
-@define-color bright_cyan #64a2bd;
+@define-color bright_cyan #8eb3c0;
 @define-color bright_white #dfc0b0;
 
 /* Adwaita Color Overrides */

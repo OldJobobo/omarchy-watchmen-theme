@@ -4,20 +4,20 @@
  */
 
 /* Omarchy/UI tokens */
-@define-color accent #246d96;
+@define-color accent #2488cb;
 @define-color cursor #dfc0b0;
 @define-color foreground #ceb8b0;
 @define-color background #2c2d37;
 @define-color selection_foreground #2c2d37;
-@define-color selection_background #246d96;
+@define-color selection_background #2488cb;
 
 @define-color color0 #2c2d37;
-@define-color color1 #af396f;
+@define-color color1 #c13e46;
 @define-color color2 #adc4b3;
-@define-color color3 #a86a3e;
+@define-color color3 #b89030;
 @define-color color4 #9287b0;
 @define-color color5 #ad93b7;
-@define-color color6 #6e7b8c;
+@define-color color6 #238e9e;
 @define-color color7 #ceb8b0;
 @define-color color8 #55595d;
 @define-color color9 #d8979a;
@@ -37,8 +37,8 @@
 @define-color base05 #ceb8b0;
 @define-color base06 #d8aaad;
 @define-color base07 #dfc0b0;
-@define-color base08 #af396f;
-@define-color base09 #a86a3e;
+@define-color base08 #c13e46;
+@define-color base09 #b89030;
 @define-color base0A #d2833b;
 @define-color base0B #adc4b3;
 @define-color base0C #8eb3c0;

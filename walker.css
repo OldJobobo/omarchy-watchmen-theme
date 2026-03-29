@@ -1,6 +1,27 @@
-@define-color selected-text #246d96;
+@define-color selected-text #2488cb;
 @define-color text #ceb8b0;
 @define-color base #2c2d37;
 @define-color border #55595d;
 @define-color foreground #ceb8b0;
 @define-color background #2c2d37;
+
+window {
+  background-color: transparent;
+  color: @text;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+window .box-wrapper {
+  border-radius: 0;
+  border: 3px solid transparent;
+  padding: 16px 20px;
+  background-color: @base;
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  background-image:
+    linear-gradient(alpha(@base, 0.96), alpha(@base, 0.96)),
+    linear-gradient(160deg, #2488cb 35%, #9287b0 65%);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.9);
+}
