@@ -1,0 +1,20 @@
+scheme: "Watchmen Distilled (Higgins Vibe)"
+author: "distilled from provided Watchmen frames + your derived palette"
+base00: "#302526" # ink-black with a slight violet bias
+base01: "#482A56" # deep warm shadow
+base02: "#5a4651" # dark mauve/charcoal
+base03: "#856184" # muted purple-mid (ui: comments / dim fg)
+base04: "#9881a5" # lavender-gray (ui: secondary fg)
+base05: "#ccc8a6" # parchment (ui: main fg)
+base06: "#f8e7aa" # warm cream highlight
+base07: "#fef7d9" # near-white paper / bubble fill
+
+base08: "#e86b97"
+base09: "#d27e55"
+base0A: "#f0b8c3"
+base0B: "#f9e58e"
+base0C: "#c7ddaf"
+base0D: "#ac759f"
+base0E: "#6dddfd"
+base0F: "#b07c68"
+

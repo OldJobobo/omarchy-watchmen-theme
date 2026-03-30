@@ -1,0 +1,28 @@
+Source dir: /home/oldjobobo/Projects/themes/omarchy-watchmen-theme/backgrounds-originals-graded
+Output dir: /home/oldjobobo/Projects/themes/omarchy-watchmen-theme/approved-color-v2
+Available sources: 21
+BG mode: default
+BG style override: default
+BG treatment: brightness=0.82 saturation=75
+MID treatment: brightness=0.82 saturation=75
+FG treatment: brightness=1.00 saturation=100
+Shadow style: soft
+Note: This build guarantees unique hero sets per wallpaper and no hero/midground overlap within a wallpaper. Source reuse across wallpapers may still occur when total slot demand exceeds available sources.
+
+[exp-1-monolith]
+layout=monolith
+background=diagonal|#582444|#11766A
+heroes=1920x1080-px-comics-watchmen-animals-horses-hd-art-wallpaper-d9d0e85d01ea5d4b26d7c82fc031263d.jpg, wallhaven-x17rq3_LE_upscale_gentle_x2.jpg, wp7238442.jpg
+midground=wallhaven-1jd56v_LE_upscale_gentle_x2.jpg, wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-m3kkrm.png, wallhaven-zxqwkj_LE_upscale_gentle (1).jpg, watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg, watchmen-wallpaper-4960188d115a9d7bd61748cf70e1064d.jpg
+
+[exp-2-contact-sheet]
+layout=contact_sheet
+background=solid|#1196CF|#D93C76
+heroes=wallhaven-j81g2w_LE_upscale_gentle_x2.jpg, watchmen-wallpaper-02d9f1b5979a513085bffb85c2d9f230.jpg, wp7238480-watchmen-comic-wallpapers.jpg, wallhaven-m3kkrm.png, watchmen-wallpaper-4960188d115a9d7bd61748cf70e1064d.jpg, wp7238489-watchmen-comic-wallpapers.jpg, wallhaven-nev8o4_LE_upscale_gentle_x2.jpg, wp7238376-watchmen-comic-wallpapers.jpg
+midground=wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-x17rq3_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, wp7238442.jpg, wp7238470-watchmen-comic-wallpapers.jpg
+
+[exp-3-bridge-collapse]
+layout=bridge_collapse
+background=radial|#b07f3b|#202E6B
+heroes=watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, wp7238470-watchmen-comic-wallpapers.jpg, wallhaven-8xkqz1_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg, wp7238479-watchmen-comic-wallpapers.jpg
+midground=wallhaven-nev8o4_LE_upscale_gentle_x2.jpg, wallhaven-zxqwkj_LE_upscale_gentle (1).jpg, watchmen-wallpaper-02d9f1b5979a513085bffb85c2d9f230.jpg, wp7238376-watchmen-comic-wallpapers.jpg, wp7238450-watchmen-comic-wallpapers.jpg, wp7238480-watchmen-comic-wallpapers.jpg
