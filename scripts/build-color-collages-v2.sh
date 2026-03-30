@@ -46,6 +46,8 @@ declare -a scene_bg_treatment_keys=()
 declare -a scene_mid_treatment_keys=()
 declare -a scene_fg_treatment_keys=()
 declare -a scene_shadow_styles=()
+declare -a scene_declared_hero_counts=()
+declare -a scene_declared_mid_counts=()
 declare -A treatment_brightness=()
 declare -A treatment_saturation=()
 
@@ -369,6 +371,8 @@ resolve_background() {
 
 declare -a resolved_backgrounds=()
 declare -A source_use_count=()
+declare -A source_hero_use_count=()
+declare -A source_last_scene=()
 
 prepare_backgrounds() {
   local i background bg_style bg_a bg_b
@@ -576,8 +580,12 @@ contains_in_array() {
 init_source_usage() {
   local source
   source_use_count=()
+  source_hero_use_count=()
+  source_last_scene=()
   for source in "${all_sources[@]}"; do
     source_use_count["$source"]=0
+    source_hero_use_count["$source"]=0
+    source_last_scene["$source"]=-1
   done
 }
 
@@ -594,13 +602,17 @@ eligible_for_refs() {
   return 0
 }
 
-select_least_used_source() {
-  local start_idx="$1"
-  shift
+select_preferred_source() {
+  local layer="$1"
+  local scene_idx="$2"
+  local start_idx="$3"
+  shift 3
   local total="${#all_sources[@]}"
   local best_candidate=""
-  local best_count=-1
-  local offset idx candidate count
+  local best_hero_count=-1
+  local best_total_count=-1
+  local best_last_scene=999999
+  local offset idx candidate hero_count total_count last_scene
 
   for ((offset=0; offset<total; offset++)); do
     idx=$(( (start_idx + offset) % total ))
@@ -609,11 +621,18 @@ select_least_used_source() {
       continue
     fi
 
-    count="${source_use_count[$candidate]:-0}"
-    if [[ -z "$best_candidate" || count -lt best_count ]]; then
+    hero_count="${source_hero_use_count[$candidate]:-0}"
+    total_count="${source_use_count[$candidate]:-0}"
+    last_scene="${source_last_scene[$candidate]:--1}"
+    if [[ -z "$best_candidate" \
+      || hero_count -lt best_hero_count \
+      || ( hero_count -eq best_hero_count && total_count -lt best_total_count ) \
+      || ( hero_count -eq best_hero_count && total_count -eq best_total_count && last_scene -lt best_last_scene ) ]]; then
       best_candidate="$candidate"
-      best_count="$count"
-      if (( best_count == 0 )); then
+      best_hero_count="$hero_count"
+      best_total_count="$total_count"
+      best_last_scene="$last_scene"
+      if (( hero_count == 0 && total_count == 0 )); then
         break
       fi
     fi
@@ -628,15 +647,23 @@ select_least_used_source() {
 
 record_source_use() {
   local source="$1"
+  local layer="$2"
+  local scene_idx="$3"
   source_use_count["$source"]=$(( ${source_use_count["$source"]:-0} + 1 ))
+  source_last_scene["$source"]="$scene_idx"
+  if [[ "$layer" == "hero" ]]; then
+    source_hero_use_count["$source"]=$(( ${source_hero_use_count["$source"]:-0} + 1 ))
+  fi
 }
 
 init_scene_refs() {
   local i
   for ((i=0; i<${#wallpaper_names[@]}; i++)); do
-    unset "hero_lists_$i" "mid_lists_$i"
+    unset "hero_lists_$i" "mid_lists_$i" "hero_declared_lists_$i" "mid_declared_lists_$i"
     declare -g -a "hero_lists_$i=()"
     declare -g -a "mid_lists_$i=()"
+    declare -g -a "hero_declared_lists_$i=()"
+    declare -g -a "mid_declared_lists_$i=()"
   done
 }
 
@@ -646,6 +673,14 @@ hero_list_ref() {
 
 mid_list_ref() {
   printf 'mid_lists_%s\n' "$1"
+}
+
+hero_declared_ref() {
+  printf 'hero_declared_lists_%s\n' "$1"
+}
+
+mid_declared_ref() {
+  printf 'mid_declared_lists_%s\n' "$1"
 }
 
 append_ref() {
@@ -658,6 +693,9 @@ append_ref() {
 get_ref_items() {
   local ref_name="$1"
   declare -n ref="$ref_name"
+  if ((${#ref[@]} == 0)); then
+    return 0
+  fi
   printf '%s\n' "${ref[@]}"
 }
 
@@ -685,64 +723,196 @@ ref_join() {
   join_by "$sep" "${ref[@]}"
 }
 
-assign_heroes() {
-  local total="${#all_sources[@]}"
-  local wallpaper_count="${#wallpaper_names[@]}"
-  local i slot=0 start_idx candidate ref_name target_count assigned_any
-
-  while :; do
-    assigned_any=0
-    for ((i=0; i<wallpaper_count; i++)); do
-      ref_name="$(hero_list_ref "$i")"
-      target_count="$(slot_lines "$i" hero | wc -l)"
-      if (( $(ref_len "$ref_name") >= target_count )); then
-        continue
-      fi
-      start_idx=$(( (slot * 7 + i * 4 + i / 2) % total ))
-      if ! candidate="$(select_least_used_source "$start_idx" "$ref_name")"; then
-        echo "unable to assign hero source within wallpaper ${wallpaper_names[$i]}" >&2
-        exit 1
-      fi
-      append_ref "$ref_name" "$candidate"
-      record_source_use "$candidate"
-      assigned_any=1
-    done
-
-    if (( assigned_any == 0 )); then
-      break
-    fi
-    slot=$((slot + 1))
-  done
-
-  log_verbose "Assigned hero image sets"
+ref_tail_join() {
+  local ref_name="$1"
+  local offset="$2"
+  local sep="$3"
+  declare -n ref="$ref_name"
+  if (( offset >= ${#ref[@]} )); then
+    printf '\n'
+    return 0
+  fi
+  join_by "$sep" "${ref[@]:$offset}"
 }
 
-assign_midgrounds() {
-  local wallpaper_count="${#wallpaper_names[@]}"
-  local i target_count idx candidate ref_name hero_ref
+ref_head_join() {
+  local ref_name="$1"
+  local count="$2"
+  local sep="$3"
+  declare -n ref="$ref_name"
+  if (( count <= 0 || ${#ref[@]} == 0 )); then
+    printf '\n'
+    return 0
+  fi
+  if (( count > ${#ref[@]} )); then
+    count="${#ref[@]}"
+  fi
+  join_by "$sep" "${ref[@]:0:$count}"
+}
 
-  for ((i=0; i<wallpaper_count; i++)); do
-    ref_name="$(mid_list_ref "$i")"
-    hero_ref="$(hero_list_ref "$i")"
-    target_count="$(slot_lines "$i" mid | wc -l)"
-    idx=$(( i * 3 ))
+load_declared_images() {
+  local i hero_ref mid_ref
+  local -a declared_items=()
 
-    while (($(ref_len "$ref_name") < target_count)); do
-      if ! candidate="$(select_least_used_source "$(( idx % ${#all_sources[@]} ))" "$hero_ref" "$ref_name")"; then
-        echo "unable to assign midground set for ${wallpaper_names[$i]}" >&2
+  scene_declared_hero_counts=()
+  scene_declared_mid_counts=()
+
+  for ((i=0; i<${#wallpaper_names[@]}; i++)); do
+    hero_ref="$(hero_declared_ref "$i")"
+    mid_ref="$(mid_declared_ref "$i")"
+
+    mapfile -t declared_items < <(yq -r --argjson idx "$i" '.scenes[$idx].hero_images // [] | .[]' "$scenes_file")
+    declare -n hero_declared="$hero_ref"
+    hero_declared=("${declared_items[@]}")
+    scene_declared_hero_counts[$i]="${#declared_items[@]}"
+
+    mapfile -t declared_items < <(yq -r --argjson idx "$i" '.scenes[$idx].mid_images // [] | .[]' "$scenes_file")
+    declare -n mid_declared="$mid_ref"
+    mid_declared=("${declared_items[@]}")
+    scene_declared_mid_counts[$i]="${#declared_items[@]}"
+  done
+}
+
+validate_declared_images() {
+  local i expected_hero_count expected_mid_count hero_ref mid_ref item
+  local -a hero_items=() mid_items=()
+  local -A seen=()
+
+  for ((i=0; i<${#wallpaper_names[@]}; i++)); do
+    expected_hero_count="$(slot_lines "$i" hero | wc -l)"
+    expected_mid_count="$(slot_lines "$i" mid | wc -l)"
+    hero_ref="$(hero_declared_ref "$i")"
+    mid_ref="$(mid_declared_ref "$i")"
+    mapfile -t hero_items < <(get_ref_items "$hero_ref")
+    mapfile -t mid_items < <(get_ref_items "$mid_ref")
+
+    if ((${#hero_items[@]} > expected_hero_count)); then
+      echo "declared hero_images exceed hero slots for ${wallpaper_names[$i]}" >&2
+      exit 1
+    fi
+
+    if ((${#mid_items[@]} > expected_mid_count)); then
+      echo "declared mid_images exceed mid slots for ${wallpaper_names[$i]}" >&2
+      exit 1
+    fi
+
+    seen=()
+    for item in "${hero_items[@]}"; do
+      if ! contains_in_array "$item" "${all_sources[@]}"; then
+        echo "declared hero image not found for ${wallpaper_names[$i]}: $item" >&2
         exit 1
       fi
-      append_ref "$ref_name" "$candidate"
-      record_source_use "$candidate"
-      idx=$((idx + 2))
+      if [[ -n "${seen[$item]:-}" ]]; then
+        echo "duplicate declared hero image in ${wallpaper_names[$i]}: $item" >&2
+        exit 1
+      fi
+      seen["$item"]=1
+    done
+
+    seen=()
+    for item in "${mid_items[@]}"; do
+      if ! contains_in_array "$item" "${all_sources[@]}"; then
+        echo "declared mid image not found for ${wallpaper_names[$i]}: $item" >&2
+        exit 1
+      fi
+      if [[ -n "${seen[$item]:-}" ]]; then
+        echo "duplicate declared mid image in ${wallpaper_names[$i]}: $item" >&2
+        exit 1
+      fi
+      seen["$item"]=1
+    done
+
+    for item in "${hero_items[@]}"; do
+      if contains_in_array "$item" "${mid_items[@]}"; then
+        echo "declared mid_images overlap declared hero_images in ${wallpaper_names[$i]}: $item" >&2
+        exit 1
+      fi
     done
   done
+}
 
-  log_verbose "Assigned midground image sets"
+seed_declared_images() {
+  local scene_idx="$1"
+  local layer="$2"
+  local declared_ref target_ref item
+
+  case "$layer" in
+    hero)
+      declared_ref="$(hero_declared_ref "$scene_idx")"
+      target_ref="$(hero_list_ref "$scene_idx")"
+      ;;
+    mid)
+      declared_ref="$(mid_declared_ref "$scene_idx")"
+      target_ref="$(mid_list_ref "$scene_idx")"
+      ;;
+    *)
+      echo "unknown declared image layer: $layer" >&2
+      exit 1
+      ;;
+  esac
+
+  while IFS= read -r item; do
+    [[ -z "$item" ]] && continue
+    append_ref "$target_ref" "$item"
+    record_source_use "$item" "$layer" "$scene_idx"
+  done < <(get_ref_items "$declared_ref")
+}
+
+assign_scene_heroes() {
+  local scene_idx="$1"
+  local total="${#all_sources[@]}"
+  local ref_name mid_declared_ref target_count slot start_idx candidate
+  ref_name="$(hero_list_ref "$scene_idx")"
+  mid_declared_ref="$(mid_declared_ref "$scene_idx")"
+  target_count="$(slot_lines "$scene_idx" hero | wc -l)"
+  seed_declared_images "$scene_idx" hero
+
+  for ((slot=$(ref_len "$ref_name"); slot<target_count; slot++)); do
+    start_idx=$(( (slot * 7 + scene_idx * 4 + scene_idx / 2) % total ))
+    if ! candidate="$(select_preferred_source "hero" "$scene_idx" "$start_idx" "$ref_name" "$mid_declared_ref")"; then
+      echo "unable to assign hero source within wallpaper ${wallpaper_names[$scene_idx]}" >&2
+      exit 1
+    fi
+    append_ref "$ref_name" "$candidate"
+    record_source_use "$candidate" "hero" "$scene_idx"
+  done
+
+  log_verbose "Assigned hero image set for ${wallpaper_names[$scene_idx]}"
+}
+
+assign_scene_midgrounds() {
+  local scene_idx="$1"
+  local target_count idx candidate ref_name hero_ref slot
+
+  ref_name="$(mid_list_ref "$scene_idx")"
+  hero_ref="$(hero_list_ref "$scene_idx")"
+  target_count="$(slot_lines "$scene_idx" mid | wc -l)"
+  idx=$(( scene_idx * 3 ))
+  seed_declared_images "$scene_idx" mid
+
+  for ((slot=$(ref_len "$ref_name"); slot<target_count; slot++)); do
+    if ! candidate="$(select_preferred_source "mid" "$scene_idx" "$(( idx % ${#all_sources[@]} ))" "$hero_ref" "$ref_name")"; then
+      echo "unable to assign midground set for ${wallpaper_names[$scene_idx]}" >&2
+      exit 1
+    fi
+    append_ref "$ref_name" "$candidate"
+    record_source_use "$candidate" "mid" "$scene_idx"
+    idx=$((idx + 2))
+  done
+
+  log_verbose "Assigned midground image set for ${wallpaper_names[$scene_idx]}"
+}
+
+assign_sources_by_scene() {
+  local scene_idx
+  for ((scene_idx=0; scene_idx<${#wallpaper_names[@]}; scene_idx++)); do
+    assign_scene_heroes "$scene_idx"
+    assign_scene_midgrounds "$scene_idx"
+  done
 }
 
 validate_assignments() {
-  local i j hero_ref mid_ref hero_sig expected_hero_count
+  local i j hero_ref mid_ref hero_sig expected_hero_count expected_mid_count
   local -A seen_sig=()
 
   for ((i=0; i<${#wallpaper_names[@]}; i++)); do
@@ -754,6 +924,12 @@ validate_assignments() {
     expected_hero_count="$(slot_lines "$i" hero | wc -l)"
     if ((${#hero_items[@]} != expected_hero_count)); then
       echo "expected $expected_hero_count heroes for ${wallpaper_names[$i]}, found ${#hero_items[@]}" >&2
+      exit 1
+    fi
+
+    expected_mid_count="$(slot_lines "$i" mid | wc -l)"
+    if ((${#mid_items[@]} != expected_mid_count)); then
+      echo "expected $expected_mid_count midgrounds for ${wallpaper_names[$i]}, found ${#mid_items[@]}" >&2
       exit 1
     fi
 
@@ -785,19 +961,25 @@ write_manifest() {
     printf 'MID treatment: brightness=%s saturation=%s\n' "$mid_brightness" "$mid_saturation"
     printf 'FG treatment: brightness=%s saturation=%s\n' "$fg_brightness" "$fg_saturation"
     printf 'Shadow style: %s\n' "$shadow_style"
-    printf 'Note: This build guarantees unique hero sets per wallpaper and no hero/midground overlap within a wallpaper. When slot demand exceeds available sources, reuse is deferred until lower-use eligible sources are exhausted.\n'
+    printf 'Note: This build guarantees unique hero sets per wallpaper and no hero/midground overlap within a wallpaper. Sources are assigned scene-by-scene; hero reuse is deferred until eligible hero candidates are exhausted, and post-hero reuse is deprioritized until lower-use alternatives are spent.\n'
   } >> "$manifest"
 
-  local i hero_ref mid_ref
+  local i hero_ref mid_ref hero_declared_count mid_declared_count
   for ((i=0; i<${#wallpaper_names[@]}; i++)); do
     hero_ref="$(hero_list_ref "$i")"
     mid_ref="$(mid_list_ref "$i")"
+    hero_declared_count="${scene_declared_hero_counts[$i]:-0}"
+    mid_declared_count="${scene_declared_mid_counts[$i]:-0}"
     {
       printf '\n[%s]\n' "${wallpaper_names[$i]}"
       printf 'layout=%s\n' "${scene_layouts[$i]}"
       printf 'background=%s\n' "${resolved_backgrounds[$i]}"
       printf 'heroes=%s\n' "$(ref_join "$hero_ref" ', ')"
+      printf 'heroes_declared=%s\n' "$(ref_head_join "$hero_ref" "$hero_declared_count" ', ')"
+      printf 'heroes_selected=%s\n' "$(ref_tail_join "$hero_ref" "$hero_declared_count" ', ')"
       printf 'midground=%s\n' "$(ref_join "$mid_ref" ', ')"
+      printf 'midground_declared=%s\n' "$(ref_head_join "$mid_ref" "$mid_declared_count" ', ')"
+      printf 'midground_selected=%s\n' "$(ref_tail_join "$mid_ref" "$mid_declared_count" ', ')"
     } >> "$manifest"
   done
 
@@ -905,10 +1087,11 @@ log_verbose "  shadow style: $shadow_style"
 
 load_scenes
 init_scene_refs
+load_declared_images
 load_sources
+validate_declared_images
 init_source_usage
-assign_heroes
-assign_midgrounds
+assign_sources_by_scene
 validate_assignments
 prepare_backgrounds
 write_manifest

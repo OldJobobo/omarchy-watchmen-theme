@@ -7,22 +7,34 @@ BG treatment: brightness=0.82 saturation=75
 MID treatment: brightness=0.82 saturation=75
 FG treatment: brightness=1.00 saturation=100
 Shadow style: soft
-Note: This build guarantees unique hero sets per wallpaper and no hero/midground overlap within a wallpaper. Source reuse across wallpapers may still occur when total slot demand exceeds available sources.
+Note: This build guarantees unique hero sets per wallpaper and no hero/midground overlap within a wallpaper. Sources are assigned scene-by-scene; hero reuse is deferred until eligible hero candidates are exhausted, and post-hero reuse is deprioritized until lower-use alternatives are spent.
 
-[exp-1-monolith]
+[decl-1-monolith-bw]
 layout=monolith
-background=diagonal|#582444|#11766A
-heroes=1920x1080-px-comics-watchmen-animals-horses-hd-art-wallpaper-d9d0e85d01ea5d4b26d7c82fc031263d.jpg, wallhaven-x17rq3_LE_upscale_gentle_x2.jpg, wp7238442.jpg
-midground=wallhaven-1jd56v_LE_upscale_gentle_x2.jpg, wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-m3kkrm.png, wallhaven-zxqwkj_LE_upscale_gentle (1).jpg, watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg, watchmen-wallpaper-4960188d115a9d7bd61748cf70e1064d.jpg
+background=diagonal|#3e4b63|#141414
+heroes=wallhaven-m3kkrm.png, wp7238480-watchmen-comic-wallpapers.jpg, wp7238442.jpg
+heroes_declared=wallhaven-m3kkrm.png, wp7238480-watchmen-comic-wallpapers.jpg, wp7238442.jpg
+heroes_selected=
+midground=wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-8xkqz1_LE_upscale_gentle_x2.jpg, wallhaven-j81g2w_LE_upscale_gentle_x2.jpg, wallhaven-nev8o4_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg
+midground_declared=wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-8xkqz1_LE_upscale_gentle_x2.jpg, wallhaven-j81g2w_LE_upscale_gentle_x2.jpg, wallhaven-nev8o4_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg
+midground_selected=
 
-[exp-2-contact-sheet]
+[decl-2-contact-sheet-mid-bw]
 layout=contact_sheet
-background=solid|#1196CF|#D93C76
-heroes=wallhaven-j81g2w_LE_upscale_gentle_x2.jpg, watchmen-wallpaper-02d9f1b5979a513085bffb85c2d9f230.jpg, wp7238480-watchmen-comic-wallpapers.jpg, wallhaven-m3kkrm.png, watchmen-wallpaper-4960188d115a9d7bd61748cf70e1064d.jpg, wp7238489-watchmen-comic-wallpapers.jpg, wallhaven-nev8o4_LE_upscale_gentle_x2.jpg, wp7238376-watchmen-comic-wallpapers.jpg
-midground=wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-x17rq3_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, wp7238442.jpg, wp7238470-watchmen-comic-wallpapers.jpg
+background=solid|#2488cb|#582444
+heroes=watchmen-wallpaper-4960188d115a9d7bd61748cf70e1064d.jpg, wallhaven-x17rq3_LE_upscale_gentle_x2.jpg, wp7238479-watchmen-comic-wallpapers.jpg, wallhaven-zxqwkj_LE_upscale_gentle (1).jpg, watchmen-wallpaper-02d9f1b5979a513085bffb85c2d9f230.jpg, wp7238489-watchmen-comic-wallpapers.jpg, wp7238470-watchmen-comic-wallpapers.jpg, wp7238492-watchmen-comic-wallpapers.jpg
+heroes_declared=watchmen-wallpaper-4960188d115a9d7bd61748cf70e1064d.jpg, wallhaven-x17rq3_LE_upscale_gentle_x2.jpg, wp7238479-watchmen-comic-wallpapers.jpg
+heroes_selected=wallhaven-zxqwkj_LE_upscale_gentle (1).jpg, watchmen-wallpaper-02d9f1b5979a513085bffb85c2d9f230.jpg, wp7238489-watchmen-comic-wallpapers.jpg, wp7238470-watchmen-comic-wallpapers.jpg, wp7238492-watchmen-comic-wallpapers.jpg
+midground=wp7238450-watchmen-comic-wallpapers.jpg, wp7238376-watchmen-comic-wallpapers.jpg, 1920x1080-px-comics-watchmen-animals-horses-hd-art-wallpaper-d9d0e85d01ea5d4b26d7c82fc031263d.jpg, wallhaven-1jd56v_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg
+midground_declared=wp7238450-watchmen-comic-wallpapers.jpg, wp7238376-watchmen-comic-wallpapers.jpg
+midground_selected=1920x1080-px-comics-watchmen-animals-horses-hd-art-wallpaper-d9d0e85d01ea5d4b26d7c82fc031263d.jpg, wallhaven-1jd56v_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg
 
-[exp-3-bridge-collapse]
+[decl-3-eclipse-cascade]
 layout=bridge_collapse
-background=radial|#b07f3b|#202E6B
-heroes=watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, wp7238470-watchmen-comic-wallpapers.jpg, wallhaven-8xkqz1_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg, wp7238479-watchmen-comic-wallpapers.jpg
-midground=wallhaven-nev8o4_LE_upscale_gentle_x2.jpg, wallhaven-zxqwkj_LE_upscale_gentle (1).jpg, watchmen-wallpaper-02d9f1b5979a513085bffb85c2d9f230.jpg, wp7238376-watchmen-comic-wallpapers.jpg, wp7238450-watchmen-comic-wallpapers.jpg, wp7238480-watchmen-comic-wallpapers.jpg
+background=diagonal|#d2833b|#11766A
+heroes=watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg, wallhaven-8xkqz1_LE_upscale_gentle_x2.jpg, wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-j81g2w_LE_upscale_gentle_x2.jpg, wallhaven-nev8o4_LE_upscale_gentle_x2.jpg
+heroes_declared=
+heroes_selected=watchmen-dr-manhattan-wallpaper-820112d01dc61ebbca5872f5c0e82932.jpg, wallhaven-8xkqz1_LE_upscale_gentle_x2.jpg, wallhaven-gjqyrq_LE_upscale_gentle_x2.jpg, wallhaven-j81g2w_LE_upscale_gentle_x2.jpg, wallhaven-nev8o4_LE_upscale_gentle_x2.jpg
+midground=wp7238376-watchmen-comic-wallpapers.jpg, wp7238450-watchmen-comic-wallpapers.jpg, 1920x1080-px-comics-watchmen-animals-horses-hd-art-wallpaper-d9d0e85d01ea5d4b26d7c82fc031263d.jpg, wallhaven-1jd56v_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, wp7238480-watchmen-comic-wallpapers.jpg
+midground_declared=
+midground_selected=wp7238376-watchmen-comic-wallpapers.jpg, wp7238450-watchmen-comic-wallpapers.jpg, 1920x1080-px-comics-watchmen-animals-horses-hd-art-wallpaper-d9d0e85d01ea5d4b26d7c82fc031263d.jpg, wallhaven-1jd56v_LE_upscale_gentle_x2.jpg, watchmen-dr-manhattan-hd-pink-comics-page-wallpaper-12f1c2d02d066e7baad8526510181932.jpg, wp7238480-watchmen-comic-wallpapers.jpg
