@@ -19,12 +19,6 @@ An Omarchy theme based on the original *Watchmen* graphic novel series, built fr
 omarchy-theme-install https://github.com/OldJobobo/omarchy-watchmen-theme
 ```
 
-Then select `watchmen` from the Omarchy theme picker, or run:
-
-```bash
-omarchy-theme-set watchmen
-```
-
 ## What's Included
 
 - Core Omarchy theme files for Hyprland, Hyprlock, Waybar, Walker, Mako, SwayOSD, GTK, icons, and shell colors.
