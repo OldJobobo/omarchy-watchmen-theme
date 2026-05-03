@@ -71,7 +71,7 @@ The theme works when the UI feels printed, framed, and slightly hostile.
 
 ## Palette Source Of Truth
 
-The first source of truth for any color choice in this theme should be [palette/watchmen64.yaml](/home/oldjobobo/Projects/themes/omarchy-watchmen-theme/palette/watchmen64.yaml).
+The first source of truth for any color choice in this theme should be [watchmen64.yaml](/home/oldjobobo/Projects/themes/omarchy-watchmen-theme/palette/watchmen64.yaml).
 
 That file is the canonical Higgins 64 palette reference used for the Watchmen graphic novel, and this theme should treat it as the authoritative color library rather than inventing near-match colors ad hoc.
 
@@ -81,7 +81,7 @@ Practical rule:
 - if a UI role needs adaptation, derive it from the nearest Higgins palette value first
 - only introduce a non-palette color when there is a strong implementation reason and the nearest Higgins value clearly fails
 
-In other words, `colors.toml` is the canonical UI mapping for the theme, but the underlying color provenance should try to resolve back to `palette/watchmen64.yaml` whenever possible.
+In other words, `colors.css` is the canonical UI mapping for the theme, but the underlying color provenance should try to resolve back to `palette/watchmen64.yaml` whenever possible.
 
 ### Core Neutrals
 

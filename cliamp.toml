@@ -1,0 +1,10 @@
+# cliamp theme — Watchmen
+# Place at ~/.config/cliamp/themes/watchmen.toml
+# To set as default: add `theme = "watchmen"` to ~/.config/cliamp/config.toml
+
+accent = "#2488cb"   # muted purple — primary interactive
+bright_fg = "#d2833b"  # warm parchment — primary text / time display
+fg = "#9287b0"       # dim charcoal — muted text / inactive elements
+green = "#238e9e"    # faded sage — playing indicator / spectrum lows
+yellow = "#d8979a"   # amber/rust — spectrum mids / warnings
+red = "#D93C76"      # Comedian red — spectrum highs / errors

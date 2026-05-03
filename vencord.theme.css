@@ -1,24 +1,24 @@
 /**
-* @name Watchmen
-* @author @bypass_
-* @version 0.1.0
-* @description Match the Watchmen Omarchy palette.
-* @source https://github.com/imbypass/base16-Discord
-**/
-
-/* import the parent */
-@import url('https://imbypass.github.io/base16-discord/omarchy-discord.theme.css');
+ * @name Watchmen
+ * @author OldJobobo
+ * @version 0.2.0
+ * @description Standalone Watchmen Discord theme for Vencord.
+ * @source https://github.com/OldJobobo/omarchy-watchmen-theme
+ */
 
 :root {
+    color-scheme: dark;
+
+    /* Watchmen palette */
     --color00: #2c2d37;
     --color01: #c13e46;
     --color02: #adc4b3;
-    --color03: #b89030;
+    --color03: #a86a3e;
     --color04: #9287b0;
     --color05: #ad93b7;
     --color06: #238e9e;
     --color07: #ceb8b0;
-    --color08: #55595d;
+    --color08: #6e7b8c;
     --color09: #d8979a;
     --color10: #a8bfb8;
     --color11: #d2833b;
@@ -26,4 +26,353 @@
     --color13: #b1a9c2;
     --color14: #8eb3c0;
     --color15: #dfc0b0;
+
+    /* Semantic aliases */
+    --watchmen-ink: #2c2d37;
+    --watchmen-panel: #242949;
+    --watchmen-panel-2: #1f1d3c;
+    --watchmen-steel: #6e7b8c;
+    --watchmen-paper: #ceb8b0;
+    --watchmen-paper-bright: #dfc0b0;
+    --watchmen-accent: #2488cb;
+    --watchmen-violet: #9287b0;
+    --watchmen-mauve: #ad93b7;
+    --watchmen-cyan: #238e9e;
+    --watchmen-danger: #c13e46;
+    --watchmen-danger-soft: #d8979a;
+    --watchmen-warning: #d2833b;
+    --watchmen-shadow: rgba(0, 0, 0, 0.86);
+    --watchmen-shadow-soft: rgba(0, 0, 0, 0.54);
+    --watchmen-divider: rgba(110, 123, 140, 0.35);
+    --watchmen-focus-ring: rgba(36, 136, 203, 0.32);
+    --watchmen-mention: rgba(210, 131, 59, 0.14);
+    --watchmen-mention-strong: rgba(210, 131, 59, 0.22);
+    --watchmen-accent-wash: rgba(36, 136, 203, 0.14);
+    --watchmen-accent-wash-strong: rgba(36, 136, 203, 0.24);
+    --watchmen-violet-wash: rgba(146, 135, 176, 0.18);
+
+    /* Discord core text */
+    --header-primary: var(--watchmen-paper-bright);
+    --header-secondary: var(--watchmen-paper);
+    --text-normal: var(--watchmen-paper);
+    --text-muted: var(--watchmen-steel);
+    --text-link: var(--watchmen-accent);
+    --text-positive: var(--color10);
+    --text-warning: var(--watchmen-warning);
+    --text-danger: var(--watchmen-danger-soft);
+    --channels-default: var(--watchmen-steel);
+    --interactive-normal: var(--watchmen-paper);
+    --interactive-hover: var(--watchmen-paper-bright);
+    --interactive-active: var(--watchmen-accent);
+    --interactive-muted: rgba(110, 123, 140, 0.52);
+
+    /* Discord surfaces */
+    --background-primary: var(--watchmen-ink);
+    --background-secondary: var(--watchmen-panel);
+    --background-secondary-alt: var(--watchmen-panel-2);
+    --background-tertiary: #1a182f;
+    --background-accent: var(--watchmen-steel);
+    --background-floating: #1c1b30;
+    --background-base-low: var(--watchmen-ink);
+    --background-base-lower: var(--watchmen-panel-2);
+    --background-base-lowest: #17152b;
+    --channeltextarea-background: #211f34;
+    --chat-background-default: var(--watchmen-ink);
+    --modal-background: #1c1b30;
+    --modal-footer-background: #17152b;
+    --home-background: var(--watchmen-ink);
+    --bg-base-primary: var(--watchmen-ink);
+    --bg-base-secondary: var(--watchmen-panel);
+    --bg-base-tertiary: var(--watchmen-panel-2);
+    --bg-surface-raised: #201f35;
+    --bg-surface-overlay: #18172d;
+    --bg-surface-overlay-tmp: #18172d;
+
+    /* State surfaces */
+    --background-mentioned: var(--watchmen-mention);
+    --background-mentioned-hover: var(--watchmen-mention-strong);
+    --background-message-hover: rgba(110, 123, 140, 0.08);
+    --background-modifier-hover: rgba(110, 123, 140, 0.12);
+    --background-modifier-active: rgba(110, 123, 140, 0.18);
+    --background-modifier-selected: rgba(146, 135, 176, 0.2);
+    --background-modifier-accent: rgba(36, 136, 203, 0.18);
+    --info-positive-background: rgba(168, 191, 184, 0.14);
+    --info-warning-background: rgba(210, 131, 59, 0.14);
+    --info-danger-background: rgba(193, 62, 70, 0.14);
+    --status-positive: var(--color10);
+    --status-warning: var(--watchmen-warning);
+    --status-danger: var(--watchmen-danger);
+    --status-speaking: var(--watchmen-cyan);
+    --control-brand-foreground: var(--watchmen-accent);
+    --control-brand-foreground-new: var(--watchmen-accent);
+    --brand-360: var(--watchmen-accent);
+    --brand-500: var(--watchmen-accent);
+    --brand-560: #1c6fa8;
+    --brand-600: #165b89;
+    --mention-foreground: var(--watchmen-warning);
+
+    /* Structural tokens */
+    --border-subtle: var(--watchmen-divider);
+    --border-normal: rgba(110, 123, 140, 0.46);
+    --border-strong: rgba(206, 184, 176, 0.14);
+    --input-border: rgba(110, 123, 140, 0.5);
+    --divider-color: var(--watchmen-divider);
+    --scrollbar-thin-thumb: rgba(110, 123, 140, 0.35);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: rgba(110, 123, 140, 0.38);
+    --scrollbar-auto-track: rgba(0, 0, 0, 0.12);
+
+    /* Cards, embeds, code */
+    --card-primary-bg: rgba(31, 29, 60, 0.72);
+    --card-secondary-bg: rgba(36, 41, 73, 0.68);
+    --profile-gradient-primary-color: var(--watchmen-panel);
+    --profile-gradient-secondary-color: var(--watchmen-panel-2);
+    --codeblock-background: #18172d;
+    --codeblock-border: rgba(146, 135, 176, 0.26);
+    --spoiler-hidden-background: rgba(110, 123, 140, 0.28);
+    --spoiler-revealed-background: rgba(31, 29, 60, 0.9);
+
+    /* Motion and shape */
+    --radius-xs: 0px;
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
+    --radius-xl: 0px;
+    --custom-channel-members-bg: linear-gradient(180deg, rgba(36, 41, 73, 0.92) 0%, rgba(31, 29, 60, 0.92) 100%);
+}
+
+.theme-dark {
+    --background-surface-high: rgba(36, 41, 73, 0.88);
+    --background-surface-higher: rgba(36, 41, 73, 0.96);
+    --background-surface-highest: rgba(44, 45, 55, 0.98);
+}
+
+/* App shell */
+.theme-dark .appMount__51fd7,
+.theme-dark .bg__12180,
+.theme-dark .wrapper_ef3116,
+.theme-dark .base_c48ade {
+    background:
+        linear-gradient(180deg, rgba(36, 136, 203, 0.04) 0%, rgba(36, 136, 203, 0) 16%),
+        linear-gradient(135deg, rgba(146, 135, 176, 0.1) 0%, rgba(31, 29, 60, 0) 34%),
+        var(--background-primary);
+}
+
+.theme-dark .sidebar_c48ade,
+.theme-dark .panels_c48ade,
+.theme-dark .members_c8ffbb,
+.theme-dark .container__2637a,
+.theme-dark .chat_f75fb0,
+.theme-dark .container__01ae2,
+.theme-dark .contentRegion__23e6b,
+.theme-dark .contentRegionScroller__23e6b,
+.theme-dark .standardSidebarView__23e6b {
+    background: transparent;
+}
+
+/* Framed surfaces */
+.theme-dark .panels_c48ade,
+.theme-dark .sidebar_c48ade,
+.theme-dark .container__2637a,
+.theme-dark .membersWrap_c8ffbb,
+.theme-dark .container__9293f,
+.theme-dark .contentRegion__23e6b,
+.theme-dark .sidebarRegion__23e6b,
+.theme-dark .layer__960e4,
+.theme-dark .root__49fc1,
+.theme-dark .menu_c1e9c4,
+.theme-dark .autocomplete__13533,
+.theme-dark .messagesPopoutWrap__45690,
+.theme-dark .container_ac201b,
+.theme-dark .container__0f2e8 {
+    box-shadow: 6px 6px 0 var(--watchmen-shadow-soft);
+    border: 1px solid var(--watchmen-divider);
+}
+
+/* Navigation and channel state */
+.theme-dark .modeSelected__2ea32 .link__2ea32,
+.theme-dark .interactiveSelected__972a0,
+.theme-dark .selected_f5eb4b,
+.theme-dark .itemCardSelected__7e549,
+.theme-dark .itemFilled__001a7 {
+    background: linear-gradient(90deg, var(--watchmen-accent-wash) 0%, rgba(146, 135, 176, 0.12) 100%);
+    color: var(--watchmen-paper-bright);
+    border-left: 0;
+    box-shadow: inset 2px 0 0 var(--watchmen-accent);
+}
+
+.theme-dark .modeUnreadImportant__2ea32 .name__2ea32,
+.theme-dark .modeSelected__2ea32 .name__2ea32,
+.theme-dark .modeSelected__2ea32 .icon__2ea32,
+.theme-dark .selected_c69b6d .linkButtonIcon__972a0,
+.theme-dark .selected_c69b6d .linkButtonText__972a0 {
+    color: var(--watchmen-paper-bright);
+}
+
+.theme-dark .modeSelected__2ea32 .item__58105,
+.theme-dark .modeSelected__2ea32 .unread__2ea32 {
+    opacity: 0;
+}
+
+.theme-dark .unread__2ea32,
+.theme-dark .item__58105 {
+    background: var(--watchmen-accent);
+    box-shadow: 0 0 0 1px rgba(36, 136, 203, 0.2);
+}
+
+/* Buttons, pills, form controls */
+.theme-dark .lookFilled__201d5.colorBrand__201d5,
+.theme-dark .button__201d5.buttonColor__7bad9 {
+    background: linear-gradient(135deg, var(--watchmen-accent) 0%, var(--color12) 100%);
+    color: var(--watchmen-paper-bright);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.34);
+}
+
+.theme-dark .lookOutlined__201d5.colorPrimary__201d5,
+.theme-dark .lookLink__201d5.colorPrimary__201d5 {
+    border-color: var(--watchmen-divider);
+    color: var(--watchmen-paper);
+}
+
+.theme-dark .barFill__00943,
+.theme-dark .vc-settings-quickActionsCard button,
+.theme-dark .vc-addonCard .vc-switch-input:checked + .vc-switch-slider {
+    background: linear-gradient(90deg, var(--watchmen-accent) 0%, var(--watchmen-violet) 100%);
+}
+
+/* Inputs and composer */
+.theme-dark .channelTextArea__74017,
+.theme-dark .scrollableContainer__74017,
+.theme-dark .inputDefault__0f084,
+.theme-dark .input__0f084,
+.theme-dark .searchBar__97492,
+.theme-dark .searchBarComponent__35e86,
+.theme-dark .quickswitcher_ac6cb0,
+.theme-dark .input__848cd {
+    background: rgba(31, 29, 60, 0.92);
+    border: 1px solid rgba(110, 123, 140, 0.4);
+    border-radius: 0;
+    box-shadow: inset 0 1px 0 rgba(223, 192, 176, 0.03);
+}
+
+.theme-dark .channelTextArea__74017 {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.theme-dark .channelTextArea__74017:focus-within,
+.theme-dark .scrollableContainer__74017:focus-within,
+.theme-dark .inputDefault__0f084:focus-within,
+.theme-dark .searchBar__97492:focus-within,
+.theme-dark .quickswitcher_ac6cb0:focus-within {
+    border-color: rgba(36, 136, 203, 0.66);
+    box-shadow:
+        0 0 0 1px rgba(36, 136, 203, 0.32),
+        0 0 0 4px rgba(36, 136, 203, 0.08);
+}
+
+/* Messages, mentions, code */
+.theme-dark .message__5126c:hover {
+    background: rgba(110, 123, 140, 0.06);
+}
+
+.theme-dark .mentioned__5126c {
+    background: linear-gradient(90deg, rgba(210, 131, 59, 0.16) 0, rgba(210, 131, 59, 0.08) 72%, rgba(210, 131, 59, 0.02) 100%);
+    border-left: 2px solid var(--watchmen-warning);
+}
+
+.theme-dark .replying__5126c {
+    background: linear-gradient(90deg, rgba(36, 136, 203, 0.12) 0, rgba(36, 136, 203, 0.04) 78%, rgba(36, 136, 203, 0.01) 100%);
+    border-left: 2px solid var(--watchmen-accent);
+}
+
+.theme-dark .markup__75297 pre,
+.theme-dark .codeContainer__75297,
+.theme-dark .hljs {
+    background: rgba(24, 23, 45, 0.94);
+    border: 1px solid rgba(146, 135, 176, 0.24);
+}
+
+.theme-dark .markup__75297 pre {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.theme-dark .markup__75297 pre > .codeContainer__75297 {
+    display: block;
+    width: 100%;
+}
+
+.theme-dark .markup__75297 pre code,
+.theme-dark .codeContainer__75297 code,
+.theme-dark .hljs code {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.theme-dark .codeContainer__75297 > code.hljs {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.theme-dark .markup__75297 :not(pre) > code {
+    background: rgba(24, 23, 45, 0.94);
+    border: 1px solid rgba(146, 135, 176, 0.24);
+    padding: 0.16em 0.38em;
+}
+
+.theme-dark .blockquoteDivider__75297 {
+    background: var(--watchmen-violet);
+}
+
+/* Popouts, modals, cards */
+.theme-dark .root__49fc1,
+.theme-dark .footer__49fc1,
+.theme-dark .uploadModal_dbca3c,
+.theme-dark .container__55c99,
+.theme-dark .embedFull__623de,
+.theme-dark .wrapperAudio__4e6ce,
+.theme-dark .cardPrimary__73069,
+.theme-dark .card__73069 {
+    background:
+        linear-gradient(180deg, rgba(223, 192, 176, 0.015) 0%, rgba(223, 192, 176, 0) 100%),
+        var(--background-floating);
+}
+
+.theme-dark .embedFull__623de,
+.theme-dark .cardPrimary__73069,
+.theme-dark .card__73069 {
+    border-color: var(--watchmen-divider);
+}
+
+/* Settings and separators */
+.theme-dark .side_b3f026 .item_b3f026:hover,
+.theme-dark .side_b3f026 .item_b3f026[aria-selected="true"] {
+    background: rgba(146, 135, 176, 0.14);
+    color: var(--watchmen-paper-bright);
+}
+
+.theme-dark .separator__00943,
+.theme-dark .divider__46c3b,
+.theme-dark .divider_af45f8,
+.theme-dark .content__908e2:before {
+    background-color: var(--watchmen-divider);
+}
+
+/* Scrollbars and focus polish */
+.theme-dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(110, 123, 140, 0.36);
+    border: 2px solid transparent;
+}
+
+.theme-dark :is(button, [role="button"], a, input, textarea):focus-visible {
+    outline: 1px solid rgba(36, 136, 203, 0.7);
+    outline-offset: 1px;
+    box-shadow: 0 0 0 4px rgba(36, 136, 203, 0.1);
 }

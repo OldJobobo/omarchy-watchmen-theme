@@ -1,0 +1,20 @@
+.codex
+.claude/
+.agents/
+CLAUDE.md
+AGENTS.md
+
+# Local scratch output from wallpaper tooling.
+output/
+renders/
+scenes/
+backgrounds-originals/
+backgrounds-originals-graded/
+extras/
+collago
+output-resolution-and-dirs-plan.md
+SCENE_YAML_REFERENCE.md
+WALLPAPER_GRADING.md
+
+.DS_Store
+*.log

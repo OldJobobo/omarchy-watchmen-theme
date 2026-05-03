@@ -24,10 +24,10 @@ theme[proc_misc]="#726764"
 
 # Box outline and divider line color
 theme[cpu_box]="#7B747E"
-theme[mem_box]="#55595D"
-theme[net_box]="#55595D"
+theme[mem_box]="#6E7B8C"
+theme[net_box]="#6E7B8C"
 theme[proc_box]="#7B747E"
-theme[div_line]="#55595D"
+theme[div_line]="#6E7B8C"
 
 # Gradient for all meters and graphs
 theme[temp_start]="#A8BFB8"
