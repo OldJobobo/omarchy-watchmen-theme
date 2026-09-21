@@ -1,0 +1,398 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1820" viewBox="0 0 1800 1820">
+<defs>
+  <pattern id="halftone" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#81544E" opacity=".16"/></pattern>
+  <pattern id="rain" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><line x1="0" y1="0" x2="0" y2="34" stroke="#8EB3C0" stroke-width="2" opacity=".12"/></pattern>
+  <linearGradient id="titlebar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#202E6B"/><stop offset=".52" stop-color="#2488CB"/><stop offset="1" stop-color="#C13E46"/></linearGradient>
+</defs>
+<rect width="1800" height="1820" fill="#2C2D37"/>
+<rect x="39" y="39" width="1736" height="1756" fill="#1F1D3C"/>
+<rect x="32" y="32" width="1736" height="1756" fill="#DFC0B0" stroke="#000000" stroke-width="10"/>
+<rect x="42" y="42" width="1716" height="1736" fill="url(#halftone)"/>
+<rect x="42" y="42" width="1716" height="1736" fill="url(#rain)"/>
+<rect x="42" y="42" width="1716" height="14" fill="url(#titlebar)"/>
+<text x="82" y="112" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="46" font-weight="900" letter-spacing="2">WATCHMEN HIGGINS 64 • LIGHT</text>
+<text x="84" y="151" fill="#3A5C7C" font-family="Inter,DejaVu Sans,sans-serif" font-size="20" font-weight="800" letter-spacing="5">BASE24 PROPOSAL • DARK INK ON AGED PAPER</text>
+<circle cx="1645" cy="110" r="54" fill="#D2833B" stroke="#1F1D3C" stroke-width="7"/>
+<line x1="1645" y1="110" x2="1640" y2="68" stroke="#1F1D3C" stroke-width="7"/>
+<line x1="1645" y1="110" x2="1624" y2="76" stroke="#1F1D3C" stroke-width="7"/>
+<circle cx="1645" cy="110" r="5" fill="#C13E46"/>
+<path d="M1686 67 C1700 80 1696 97 1688 109 C1682 95 1666 90 1669 76 C1672 64 1680 60 1686 67Z" fill="#C13E46"/>
+<rect x="89" y="197" width="400" height="158" fill="#1F1D3C"/>
+<rect x="82" y="190" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="90" y="198" width="384" height="82" fill="#DFC0B0"/>
+<text x="104" y="230" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base00</text>
+<text x="104" y="263" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Paper Field</text>
+<rect x="364" y="208" width="92" height="56" fill="#DFC0B0" stroke="#1F1D3C" stroke-width="2"/>
+<text x="410" y="242" fill="#1F1D3C" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R2C7</text>
+<text x="100" y="306" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#DFC0B0</text>
+<text x="100" y="333" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">default background</text>
+<text x="459" y="306" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="507" y="197" width="400" height="158" fill="#1F1D3C"/>
+<rect x="500" y="190" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="508" y="198" width="384" height="82" fill="#CEB8B0"/>
+<text x="522" y="230" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base01</text>
+<text x="522" y="263" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Aged Newsprint</text>
+<rect x="782" y="208" width="92" height="56" fill="#CEB8B0" stroke="#1F1D3C" stroke-width="2"/>
+<text x="828" y="242" fill="#1F1D3C" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R2C4</text>
+<text x="518" y="306" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#CEB8B0</text>
+<text x="518" y="333" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">lighter background</text>
+<text x="877" y="306" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="925" y="197" width="400" height="158" fill="#1F1D3C"/>
+<rect x="918" y="190" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="926" y="198" width="384" height="82" fill="#D8AAAD"/>
+<text x="940" y="230" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base02</text>
+<text x="940" y="263" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Rose Wash</text>
+<rect x="1200" y="208" width="92" height="56" fill="#D8AAAD" stroke="#1F1D3C" stroke-width="2"/>
+<text x="1246" y="242" fill="#1F1D3C" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R2C5</text>
+<text x="936" y="306" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#D8AAAD</text>
+<text x="936" y="333" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">selection background</text>
+<text x="1295" y="306" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="1343" y="197" width="400" height="158" fill="#1F1D3C"/>
+<rect x="1336" y="190" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="1344" y="198" width="384" height="82" fill="#55595D"/>
+<text x="1358" y="230" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base03</text>
+<text x="1358" y="263" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Pencil Margin</text>
+<rect x="1618" y="208" width="92" height="56" fill="#55595D" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1664" y="242" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R6C2</text>
+<text x="1354" y="306" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#55595D</text>
+<text x="1354" y="333" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">comments / muted text</text>
+<text x="1713" y="306" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="89" y="373" width="400" height="158" fill="#1F1D3C"/>
+<rect x="82" y="366" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="90" y="374" width="384" height="82" fill="#482A56"/>
+<text x="104" y="406" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base04</text>
+<text x="104" y="439" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Violet Caption</text>
+<rect x="364" y="384" width="92" height="56" fill="#482A56" stroke="#F4DDD1" stroke-width="2"/>
+<text x="410" y="418" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R3C2</text>
+<text x="100" y="482" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#482A56</text>
+<text x="100" y="509" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">dark foreground</text>
+<text x="459" y="482" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="507" y="373" width="400" height="158" fill="#1F1D3C"/>
+<rect x="500" y="366" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="508" y="374" width="384" height="82" fill="#2C2D37"/>
+<text x="522" y="406" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base05</text>
+<text x="522" y="439" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Editorial Ink</text>
+<rect x="782" y="384" width="92" height="56" fill="#2C2D37" stroke="#F4DDD1" stroke-width="2"/>
+<text x="828" y="418" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R6C1</text>
+<text x="518" y="482" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#2C2D37</text>
+<text x="518" y="509" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">default foreground</text>
+<text x="877" y="482" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="925" y="373" width="400" height="158" fill="#1F1D3C"/>
+<rect x="918" y="366" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="926" y="374" width="384" height="82" fill="#242949"/>
+<text x="940" y="406" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base06</text>
+<text x="940" y="439" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Midnight Type</text>
+<rect x="1200" y="384" width="92" height="56" fill="#242949" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1246" y="418" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R6C7</text>
+<text x="936" y="482" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#242949</text>
+<text x="936" y="509" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">light foreground</text>
+<text x="1295" y="482" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="1343" y="373" width="400" height="158" fill="#1F1D3C"/>
+<rect x="1336" y="366" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="1344" y="374" width="384" height="82" fill="#1F1D3C"/>
+<text x="1358" y="406" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base07</text>
+<text x="1358" y="439" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Rorschach Type</text>
+<rect x="1618" y="384" width="92" height="56" fill="#1F1D3C" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1664" y="418" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R7C4</text>
+<text x="1354" y="482" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#1F1D3C</text>
+<text x="1354" y="509" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">darkest foreground</text>
+<text x="1713" y="482" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="89" y="549" width="400" height="158" fill="#1F1D3C"/>
+<rect x="82" y="542" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="90" y="550" width="384" height="82" fill="#79383F"/>
+<text x="104" y="582" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base08</text>
+<text x="104" y="615" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Dried Blood</text>
+<rect x="364" y="560" width="92" height="56" fill="#79383F" stroke="#F4DDD1" stroke-width="2"/>
+<text x="410" y="594" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R6C9</text>
+<text x="100" y="658" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#79383F</text>
+<text x="100" y="685" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">red / error</text>
+<text x="459" y="658" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="507" y="549" width="400" height="158" fill="#1F1D3C"/>
+<rect x="500" y="542" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="508" y="550" width="384" height="82" fill="#81544E"/>
+<text x="522" y="582" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base09</text>
+<text x="522" y="615" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Oxidized Brick</text>
+<rect x="782" y="560" width="92" height="56" fill="#81544E" stroke="#F4DDD1" stroke-width="2"/>
+<text x="828" y="594" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R7C7</text>
+<text x="518" y="658" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#81544E</text>
+<text x="518" y="685" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">orange / warning</text>
+<text x="877" y="658" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="925" y="549" width="400" height="158" fill="#1F1D3C"/>
+<rect x="918" y="542" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="926" y="550" width="384" height="82" fill="#616935"/>
+<text x="940" y="582" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base0A</text>
+<text x="940" y="615" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Tarnished Ochre</text>
+<rect x="1200" y="560" width="92" height="56" fill="#616935" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1246" y="594" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R4C1</text>
+<text x="936" y="658" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#616935</text>
+<text x="936" y="685" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">yellow</text>
+<text x="1295" y="658" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="1343" y="549" width="400" height="158" fill="#1F1D3C"/>
+<rect x="1336" y="542" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="1344" y="550" width="384" height="82" fill="#4F7549"/>
+<text x="1358" y="582" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base0B</text>
+<text x="1358" y="615" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Evidence Green</text>
+<rect x="1618" y="560" width="92" height="56" fill="#4F7549" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1664" y="594" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R4C2</text>
+<text x="1354" y="658" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#4F7549</text>
+<text x="1354" y="685" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">green</text>
+<text x="1713" y="658" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="89" y="725" width="400" height="158" fill="#1F1D3C"/>
+<rect x="82" y="718" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="90" y="726" width="384" height="82" fill="#3A5C7C"/>
+<text x="104" y="758" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base0C</text>
+<text x="104" y="791" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Raincoat Teal</text>
+<rect x="364" y="736" width="92" height="56" fill="#3A5C7C" stroke="#F4DDD1" stroke-width="2"/>
+<text x="410" y="770" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R6C8</text>
+<text x="100" y="834" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#3A5C7C</text>
+<text x="100" y="861" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">cyan</text>
+<text x="459" y="834" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="507" y="725" width="400" height="158" fill="#1F1D3C"/>
+<rect x="500" y="718" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="508" y="726" width="384" height="82" fill="#202E6B"/>
+<text x="522" y="758" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base0D</text>
+<text x="522" y="791" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Midnight Blue</text>
+<rect x="782" y="736" width="92" height="56" fill="#202E6B" stroke="#F4DDD1" stroke-width="2"/>
+<text x="828" y="770" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R3C3</text>
+<text x="518" y="834" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#202E6B</text>
+<text x="518" y="861" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">blue / focus</text>
+<text x="877" y="834" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="925" y="725" width="400" height="158" fill="#1F1D3C"/>
+<rect x="918" y="718" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="926" y="726" width="384" height="82" fill="#582444"/>
+<text x="940" y="758" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base0E</text>
+<text x="940" y="791" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Bruise Wine</text>
+<rect x="1200" y="736" width="92" height="56" fill="#582444" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1246" y="770" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R3C1</text>
+<text x="936" y="834" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#582444</text>
+<text x="936" y="861" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">purple</text>
+<text x="1295" y="834" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="1343" y="725" width="400" height="158" fill="#1F1D3C"/>
+<rect x="1336" y="718" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="1344" y="726" width="384" height="82" fill="#401C30"/>
+<text x="1358" y="758" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base0F</text>
+<text x="1358" y="791" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Printer Maroon</text>
+<rect x="1618" y="736" width="92" height="56" fill="#401C30" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1664" y="770" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R7C5</text>
+<text x="1354" y="834" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#401C30</text>
+<text x="1354" y="861" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">brown / special</text>
+<text x="1713" y="834" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="89" y="901" width="400" height="158" fill="#1F1D3C"/>
+<rect x="82" y="894" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="90" y="902" width="384" height="82" fill="#D8AAAD"/>
+<text x="104" y="934" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base10</text>
+<text x="104" y="967" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Blushed Paper</text>
+<rect x="364" y="912" width="92" height="56" fill="#D8AAAD" stroke="#1F1D3C" stroke-width="2"/>
+<text x="410" y="946" fill="#1F1D3C" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R2C5</text>
+<text x="100" y="1010" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#D8AAAD</text>
+<text x="100" y="1037" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">darker background</text>
+<text x="459" y="1010" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="507" y="901" width="400" height="158" fill="#1F1D3C"/>
+<rect x="500" y="894" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="508" y="902" width="384" height="82" fill="#A7A793"/>
+<text x="522" y="934" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base11</text>
+<text x="522" y="967" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Archive Board</text>
+<rect x="782" y="912" width="92" height="56" fill="#A7A793" stroke="#1F1D3C" stroke-width="2"/>
+<text x="828" y="946" fill="#1F1D3C" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R5C7</text>
+<text x="518" y="1010" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#A7A793</text>
+<text x="518" y="1037" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">darkest background</text>
+<text x="877" y="1010" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="925" y="901" width="400" height="158" fill="#1F1D3C"/>
+<rect x="918" y="894" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="926" y="902" width="384" height="82" fill="#C13E46"/>
+<text x="940" y="934" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base12</text>
+<text x="940" y="967" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Alarm Red</text>
+<rect x="1200" y="912" width="92" height="56" fill="#C13E46" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1246" y="946" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R5C6</text>
+<text x="936" y="1010" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#C13E46</text>
+<text x="936" y="1037" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">bright red</text>
+<text x="1295" y="1010" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="1343" y="901" width="400" height="158" fill="#1F1D3C"/>
+<rect x="1336" y="894" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="1344" y="902" width="384" height="82" fill="#D2833B"/>
+<text x="1358" y="934" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base13</text>
+<text x="1358" y="967" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Streetlamp Amber</text>
+<rect x="1618" y="912" width="92" height="56" fill="#D2833B" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1664" y="946" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R5C5</text>
+<text x="1354" y="1010" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#D2833B</text>
+<text x="1354" y="1037" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">bright orange / yellow</text>
+<text x="1713" y="1010" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="89" y="1077" width="400" height="158" fill="#1F1D3C"/>
+<rect x="82" y="1070" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="90" y="1078" width="384" height="82" fill="#ADC4B3"/>
+<text x="104" y="1110" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base14</text>
+<text x="104" y="1143" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Evidence Mint</text>
+<rect x="364" y="1088" width="92" height="56" fill="#ADC4B3" stroke="#1F1D3C" stroke-width="2"/>
+<text x="410" y="1122" fill="#1F1D3C" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R1C7</text>
+<text x="100" y="1186" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#ADC4B3</text>
+<text x="100" y="1213" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">bright green</text>
+<text x="459" y="1186" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="507" y="1077" width="400" height="158" fill="#1F1D3C"/>
+<rect x="500" y="1070" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="508" y="1078" width="384" height="82" fill="#238E9E"/>
+<text x="522" y="1110" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base15</text>
+<text x="522" y="1143" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Cold Static</text>
+<rect x="782" y="1088" width="92" height="56" fill="#238E9E" stroke="#F4DDD1" stroke-width="2"/>
+<text x="828" y="1122" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R1C9</text>
+<text x="518" y="1186" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#238E9E</text>
+<text x="518" y="1213" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">bright cyan</text>
+<text x="877" y="1186" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="925" y="1077" width="400" height="158" fill="#1F1D3C"/>
+<rect x="918" y="1070" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="926" y="1078" width="384" height="82" fill="#2488CB"/>
+<text x="940" y="1110" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base16</text>
+<text x="940" y="1143" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Manhattan Blue</text>
+<rect x="1200" y="1088" width="92" height="56" fill="#2488CB" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1246" y="1122" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R3C6</text>
+<text x="936" y="1186" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#2488CB</text>
+<text x="936" y="1213" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">bright blue</text>
+<text x="1295" y="1186" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<rect x="1343" y="1077" width="400" height="158" fill="#1F1D3C"/>
+<rect x="1336" y="1070" width="400" height="158" fill="#CEB8B0" stroke="#2C2D37" stroke-width="3"/>
+<rect x="1344" y="1078" width="384" height="82" fill="#AD93B7"/>
+<text x="1358" y="1110" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="25" font-weight="900">base17</text>
+<text x="1358" y="1143" fill="#F4DDD1" font-family="Inter,DejaVu Sans,sans-serif" font-size="22" font-weight="800">Mauve Radiation</text>
+<rect x="1618" y="1088" width="92" height="56" fill="#AD93B7" stroke="#F4DDD1" stroke-width="2"/>
+<text x="1664" y="1122" fill="#F4DDD1" text-anchor="middle" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="15" font-weight="900">H64 R3C7</text>
+<text x="1354" y="1186" fill="#2C2D37" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="19" font-weight="900">#AD93B7</text>
+<text x="1354" y="1213" fill="#482A56" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">bright purple</text>
+<text x="1713" y="1186" fill="#3A5C7C" text-anchor="end" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="14" font-weight="700">exact match</text>
+<line x1="82" y1="1232" x2="1718" y2="1232" stroke="#81544E" stroke-width="3"/>
+<text x="82" y="1270" fill="#1F1D3C" font-family="Inter,DejaVu Sans,sans-serif" font-size="28" font-weight="900">HIGGINS 64 SOURCE MAP</text>
+<text x="82" y="1301" fill="#3A5C7C" font-family="Inter,DejaVu Sans,sans-serif" font-size="16" font-weight="700" letter-spacing="2">MANHATTAN BLUE FRAMES MARK SWATCHES USED BY THIS BASE24 PROPOSAL</text>
+<rect x="82" y="1328" width="48" height="48" fill="#8EB3C0" stroke="#2C2D37" stroke-width="2"/>
+<text x="106.0" y="1359" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,1</text>
+<rect x="134" y="1328" width="48" height="48" fill="#64A2BD" stroke="#2C2D37" stroke-width="2"/>
+<text x="158.0" y="1359" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,2</text>
+<rect x="186" y="1328" width="48" height="48" fill="#1196CF" stroke="#2C2D37" stroke-width="2"/>
+<text x="210.0" y="1359" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,3</text>
+<rect x="238" y="1328" width="48" height="48" fill="#A8BFB8" stroke="#2C2D37" stroke-width="2"/>
+<text x="262.0" y="1359" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,4</text>
+<rect x="290" y="1328" width="48" height="48" fill="#80BCC0" stroke="#2C2D37" stroke-width="2"/>
+<text x="314.0" y="1359" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,5</text>
+<rect x="342" y="1328" width="48" height="48" fill="#148DB4" stroke="#2C2D37" stroke-width="2"/>
+<text x="366.0" y="1359" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,6</text>
+<rect x="394" y="1328" width="48" height="48" fill="#ADC4B3" stroke="#2488CB" stroke-width="5"/>
+<text x="418.0" y="1359" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,7</text>
+<rect x="446" y="1328" width="48" height="48" fill="#74ADA9" stroke="#2C2D37" stroke-width="2"/>
+<text x="470.0" y="1359" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,8</text>
+<rect x="498" y="1328" width="48" height="48" fill="#238E9E" stroke="#2488CB" stroke-width="5"/>
+<text x="522.0" y="1359" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">1,9</text>
+<rect x="82" y="1380" width="48" height="48" fill="#938284" stroke="#2C2D37" stroke-width="2"/>
+<text x="106.0" y="1411" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,1</text>
+<rect x="134" y="1380" width="48" height="48" fill="#99737D" stroke="#2C2D37" stroke-width="2"/>
+<text x="158.0" y="1411" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,2</text>
+<rect x="186" y="1380" width="48" height="48" fill="#AF396F" stroke="#2C2D37" stroke-width="2"/>
+<text x="210.0" y="1411" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,3</text>
+<rect x="238" y="1380" width="48" height="48" fill="#CEB8B0" stroke="#2488CB" stroke-width="5"/>
+<text x="262.0" y="1411" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,4</text>
+<rect x="290" y="1380" width="48" height="48" fill="#D8AAAD" stroke="#2488CB" stroke-width="5"/>
+<text x="314.0" y="1411" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,5</text>
+<rect x="342" y="1380" width="48" height="48" fill="#D93C76" stroke="#2C2D37" stroke-width="2"/>
+<text x="366.0" y="1411" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,6</text>
+<rect x="394" y="1380" width="48" height="48" fill="#DFC0B0" stroke="#2488CB" stroke-width="5"/>
+<text x="418.0" y="1411" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,7</text>
+<rect x="446" y="1380" width="48" height="48" fill="#D8979A" stroke="#2C2D37" stroke-width="2"/>
+<text x="470.0" y="1411" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,8</text>
+<rect x="498" y="1380" width="48" height="48" fill="#C83C61" stroke="#2C2D37" stroke-width="2"/>
+<text x="522.0" y="1411" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">2,9</text>
+<rect x="82" y="1432" width="48" height="48" fill="#582444" stroke="#2488CB" stroke-width="5"/>
+<text x="106.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,1</text>
+<rect x="134" y="1432" width="48" height="48" fill="#482A56" stroke="#2488CB" stroke-width="5"/>
+<text x="158.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,2</text>
+<rect x="186" y="1432" width="48" height="48" fill="#202E6B" stroke="#2488CB" stroke-width="5"/>
+<text x="210.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,3</text>
+<rect x="238" y="1432" width="48" height="48" fill="#AFB3BF" stroke="#2C2D37" stroke-width="2"/>
+<text x="262.0" y="1463" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,4</text>
+<rect x="290" y="1432" width="48" height="48" fill="#8198BC" stroke="#2C2D37" stroke-width="2"/>
+<text x="314.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,5</text>
+<rect x="342" y="1432" width="48" height="48" fill="#2488CB" stroke="#2488CB" stroke-width="5"/>
+<text x="366.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,6</text>
+<rect x="394" y="1432" width="48" height="48" fill="#AD93B7" stroke="#2488CB" stroke-width="5"/>
+<text x="418.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,7</text>
+<rect x="446" y="1432" width="48" height="48" fill="#9287B0" stroke="#2C2D37" stroke-width="2"/>
+<text x="470.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,8</text>
+<rect x="498" y="1432" width="48" height="48" fill="#4E6AA0" stroke="#2C2D37" stroke-width="2"/>
+<text x="522.0" y="1463" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">3,9</text>
+<rect x="82" y="1484" width="48" height="48" fill="#616935" stroke="#2488CB" stroke-width="5"/>
+<text x="106.0" y="1515" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,1</text>
+<rect x="134" y="1484" width="48" height="48" fill="#4F7549" stroke="#2488CB" stroke-width="5"/>
+<text x="158.0" y="1515" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,2</text>
+<rect x="186" y="1484" width="48" height="48" fill="#11766A" stroke="#2C2D37" stroke-width="2"/>
+<text x="210.0" y="1515" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,3</text>
+<rect x="238" y="1484" width="48" height="48" fill="#9C9C9E" stroke="#2C2D37" stroke-width="2"/>
+<text x="262.0" y="1515" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,4</text>
+<rect x="290" y="1484" width="48" height="48" fill="#6E7B8C" stroke="#2C2D37" stroke-width="2"/>
+<text x="314.0" y="1515" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,5</text>
+<rect x="342" y="1484" width="48" height="48" fill="#246D96" stroke="#2C2D37" stroke-width="2"/>
+<text x="366.0" y="1515" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,6</text>
+<rect x="394" y="1484" width="48" height="48" fill="#AEA8A9" stroke="#2C2D37" stroke-width="2"/>
+<text x="418.0" y="1515" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,7</text>
+<rect x="446" y="1484" width="48" height="48" fill="#B1A0AA" stroke="#2C2D37" stroke-width="2"/>
+<text x="470.0" y="1515" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,8</text>
+<rect x="498" y="1484" width="48" height="48" fill="#3A5F87" stroke="#2C2D37" stroke-width="2"/>
+<text x="522.0" y="1515" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">4,9</text>
+<rect x="82" y="1536" width="48" height="48" fill="#A996A2" stroke="#2C2D37" stroke-width="2"/>
+<text x="106.0" y="1567" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,1</text>
+<rect x="134" y="1536" width="48" height="48" fill="#B1A9C2" stroke="#2C2D37" stroke-width="2"/>
+<text x="158.0" y="1567" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,2</text>
+<rect x="186" y="1536" width="48" height="48" fill="#6E7B75" stroke="#2C2D37" stroke-width="2"/>
+<text x="210.0" y="1567" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,3</text>
+<rect x="238" y="1536" width="48" height="48" fill="#A86A3E" stroke="#2C2D37" stroke-width="2"/>
+<text x="262.0" y="1567" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,4</text>
+<rect x="290" y="1536" width="48" height="48" fill="#D2833B" stroke="#2488CB" stroke-width="5"/>
+<text x="314.0" y="1567" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,5</text>
+<rect x="342" y="1536" width="48" height="48" fill="#C13E46" stroke="#2488CB" stroke-width="5"/>
+<text x="366.0" y="1567" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,6</text>
+<rect x="394" y="1536" width="48" height="48" fill="#A7A793" stroke="#2488CB" stroke-width="5"/>
+<text x="418.0" y="1567" text-anchor="middle" fill="#1F1D3C" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,7</text>
+<rect x="446" y="1536" width="48" height="48" fill="#75746C" stroke="#2C2D37" stroke-width="2"/>
+<text x="470.0" y="1567" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,8</text>
+<rect x="498" y="1536" width="48" height="48" fill="#7B747E" stroke="#2C2D37" stroke-width="2"/>
+<text x="522.0" y="1567" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">5,9</text>
+<rect x="82" y="1588" width="48" height="48" fill="#2C2D37" stroke="#2488CB" stroke-width="5"/>
+<text x="106.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,1</text>
+<rect x="134" y="1588" width="48" height="48" fill="#55595D" stroke="#2488CB" stroke-width="5"/>
+<text x="158.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,2</text>
+<rect x="186" y="1588" width="48" height="48" fill="#555F72" stroke="#2C2D37" stroke-width="2"/>
+<text x="210.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,3</text>
+<rect x="238" y="1588" width="48" height="48" fill="#3D7A7F" stroke="#2C2D37" stroke-width="2"/>
+<text x="262.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,4</text>
+<rect x="290" y="1588" width="48" height="48" fill="#802B52" stroke="#2C2D37" stroke-width="2"/>
+<text x="314.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,5</text>
+<rect x="342" y="1588" width="48" height="48" fill="#7B2B4C" stroke="#2C2D37" stroke-width="2"/>
+<text x="366.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,6</text>
+<rect x="394" y="1588" width="48" height="48" fill="#242949" stroke="#2488CB" stroke-width="5"/>
+<text x="418.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,7</text>
+<rect x="446" y="1588" width="48" height="48" fill="#3A5C7C" stroke="#2488CB" stroke-width="5"/>
+<text x="470.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,8</text>
+<rect x="498" y="1588" width="48" height="48" fill="#79383F" stroke="#2488CB" stroke-width="5"/>
+<text x="522.0" y="1619" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">6,9</text>
+<rect x="82" y="1640" width="48" height="48" fill="#846B75" stroke="#2C2D37" stroke-width="2"/>
+<text x="106.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,1</text>
+<rect x="134" y="1640" width="48" height="48" fill="#712942" stroke="#2C2D37" stroke-width="2"/>
+<text x="158.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,2</text>
+<rect x="186" y="1640" width="48" height="48" fill="#512345" stroke="#2C2D37" stroke-width="2"/>
+<text x="210.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,3</text>
+<rect x="238" y="1640" width="48" height="48" fill="#1F1D3C" stroke="#2488CB" stroke-width="5"/>
+<text x="262.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,4</text>
+<rect x="290" y="1640" width="48" height="48" fill="#401C30" stroke="#2488CB" stroke-width="5"/>
+<text x="314.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,5</text>
+<rect x="342" y="1640" width="48" height="48" fill="#242949" stroke="#2C2D37" stroke-width="2"/>
+<text x="366.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,6</text>
+<rect x="394" y="1640" width="48" height="48" fill="#81544E" stroke="#2488CB" stroke-width="5"/>
+<text x="418.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,7</text>
+<rect x="446" y="1640" width="48" height="48" fill="#726764" stroke="#2C2D37" stroke-width="2"/>
+<text x="470.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,8</text>
+<rect x="498" y="1640" width="48" height="48" fill="#3E6274" stroke="#2C2D37" stroke-width="2"/>
+<text x="522.0" y="1671" text-anchor="middle" fill="#F4DDD1" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="10" font-weight="800">7,9</text>
+<text x="620" y="1350" fill="#202E6B" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="21" font-weight="900">24 / 24</text>
+<text x="790" y="1350" fill="#2C2D37" font-family="Inter,DejaVu Sans,sans-serif" font-size="18">Every slot uses an exact Higgins 64 swatch</text>
+<text x="620" y="1426" fill="#202E6B" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="21" font-weight="900">BASE03–07</text>
+<text x="790" y="1426" fill="#2C2D37" font-family="Inter,DejaVu Sans,sans-serif" font-size="18">Dark violet ink builds the foreground ramp</text>
+<text x="620" y="1502" fill="#202E6B" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="21" font-weight="900">BASE0D</text>
+<text x="790" y="1502" fill="#2C2D37" font-family="Inter,DejaVu Sans,sans-serif" font-size="18">Midnight Blue carries focus on paper</text>
+<text x="620" y="1578" fill="#202E6B" font-family="JetBrains Mono,DejaVu Sans Mono,monospace" font-size="21" font-weight="900">BASE12–17</text>
+<text x="790" y="1578" fill="#2C2D37" font-family="Inter,DejaVu Sans,sans-serif" font-size="18">Original print brights remain available for signals</text>
+<text x="620" y="1658" fill="#726764" font-family="Inter,DejaVu Sans,sans-serif" font-size="16">Source: palette/watchmen64.yaml • Proposal: palette/watchmen-light-base24.yaml</text>
+</svg>

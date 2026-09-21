@@ -1,0 +1,36 @@
+system: "base24"
+name: "Watchmen Higgins 64 Light"
+slug: "watchmen-higgins-64-light"
+author: "OldJobobo, based on John Higgins' Watchmen palette"
+variant: "light"
+
+palette:
+  # --- aged paper / midnight ink ramp ---
+  base00: "#DFC0B0" # Paper Field      - default background; Higgins 64 R2C7
+  base01: "#CEB8B0" # Aged Newsprint   - lighter background; Higgins 64 R2C4
+  base02: "#D8AAAD" # Rose Wash        - selection background; Higgins 64 R2C5
+  base03: "#55595D" # Pencil Margin    - comments / muted text; Higgins 64 R6C2
+  base04: "#482A56" # Violet Caption   - dark foreground; Higgins 64 R3C2
+  base05: "#2C2D37" # Editorial Ink    - default foreground; Higgins 64 R6C1
+  base06: "#242949" # Midnight Type    - light foreground; Higgins 64 R6C7
+  base07: "#1F1D3C" # Rorschach Type   - darkest foreground; Higgins 64 R7C4
+
+  # --- noir captions / city signal accents ---
+  base08: "#79383F" # Dried Blood      - red / error; Higgins 64 R6C9
+  base09: "#81544E" # Oxidized Brick   - orange / warning; Higgins 64 R7C7
+  base0A: "#616935" # Tarnished Ochre  - yellow; Higgins 64 R4C1
+  base0B: "#4F7549" # Evidence Green   - green; Higgins 64 R4C2
+  base0C: "#3A5C7C" # Raincoat Teal    - cyan; Higgins 64 R6C8
+  base0D: "#202E6B" # Midnight Blue    - blue / focus; Higgins 64 R3C3
+  base0E: "#582444" # Bruise Wine      - purple; Higgins 64 R3C1
+  base0F: "#401C30" # Printer Maroon   - brown / special; Higgins 64 R7C5
+
+  # --- base24 extension ---
+  base10: "#D8AAAD" # Blushed Paper    - darker background; Higgins 64 R2C5
+  base11: "#A7A793" # Archive Board    - darkest background; Higgins 64 R5C7
+  base12: "#C13E46" # Alarm Red        - bright red; Higgins 64 R5C6
+  base13: "#D2833B" # Streetlamp Amber - bright orange / yellow; Higgins 64 R5C5
+  base14: "#ADC4B3" # Evidence Mint    - bright green; Higgins 64 R1C7
+  base15: "#238E9E" # Cold Static      - bright cyan; Higgins 64 R1C9
+  base16: "#2488CB" # Manhattan Blue   - bright blue; Higgins 64 R3C6
+  base17: "#AD93B7" # Mauve Radiation  - bright purple; Higgins 64 R3C7

@@ -1,35 +1,65 @@
+# Canonical UI mapping from palette/watchmen-base24.yaml.
+# Every color is an exact swatch from palette/watchmen64.yaml.
+
 # Accent and UI colors
-accent = "#2488cb"
-active_border_color = "#2488cb"
-active_tab_background = "#2488cb"
+accent = "#2488CB" # base0D - Manhattan Blue
+active_border_color = "#2488CB"
+active_tab_background = "#2488CB"
 
 # Cursor colors
-cursor = "#dfc0b0"
+cursor = "#DFC0B0" # base06/base07 - Paper Highlight
 
 # Primary colors
-foreground = "#ceb8b0"
-background = "#2c2d37"
+foreground = "#CEB8B0" # base05 - Aged Paper
+background = "#2C2D37" # base00 - Panel Ink
 
 # Selection colors
-selection_foreground = "#2c2d37"
-selection_background = "#2488cb"
+selection_foreground = "#DFC0B0" # base07 - Flash Panel
+selection_background = "#3A5F87" # base02 - Cold Frame
 
-# Normal colors (ANSI 0-7)
-color0 = "#2c2d37"
-color1 = "#c13e46"
-color2 = "#adc4b3"
-color3 = "#a86a3e"
-color4 = "#9287b0"
-color5 = "#ad93b7"
-color6 = "#238e9e"
-color7 = "#ceb8b0"
+# Normal colors (ANSI 0-7 / Base24 base00, base08-base0E, base05)
+color0 = "#2C2D37"
+color1 = "#C13E46"
+color2 = "#ADC4B3"
+color3 = "#D2833B"
+color4 = "#2488CB"
+color5 = "#9287B0"
+color6 = "#238E9E"
+color7 = "#CEB8B0"
 
-# Bright colors (ANSI 8-15)
+# Bright colors (ANSI 8-15 / Base24 base03, base12-base17, base07)
 color8 = "#6E7B8C"
-color9 = "#d8979a"
-color10 = "#a8bfb8"
-color11 = "#d2833b"
-color12 = "#4e6aa0"
-color13 = "#b1a9c2"
-color14 = "#8eb3c0"
-color15 = "#dfc0b0"
+color9 = "#D8979A"
+color10 = "#A8BFB8"
+color11 = "#D2833B"
+color12 = "#64A2BD"
+color13 = "#B1A9C2"
+color14 = "#8EB3C0"
+color15 = "#DFC0B0"
+
+# Omarchy 4 semantic Base24 roles.
+mode = "dark"
+bg = "#2C2D37" # base00 - Panel Ink
+lighter_bg = "#55595D" # base01 - Wet Concrete
+selection = "#3A5F87" # base02 - Cold Frame
+muted = "#6E7B8C" # base03 - Steel Rain
+dark_fg = "#9C9C9E" # base04 - Newsprint Gray
+fg = "#CEB8B0" # base05 - Aged Paper
+light_fg = "#DFC0B0" # base06 - Paper Highlight
+bright_fg = "#DFC0B0" # base07 - Flash Panel
+red = "#C13E46" # base08 - Warning Blood
+orange = "#A86A3E" # base09 - Rust Signal
+yellow = "#D2833B" # base0A - Street Amber
+green = "#ADC4B3" # base0B - Archive Sage
+cyan = "#238E9E" # base0C - Cold Static
+blue = "#2488CB" # base0D - Manhattan Blue
+magenta = "#9287B0" # base0E - Bruised Violet
+brown = "#81544E" # base0F - Oxidized Brick
+dark_bg = "#242949" # base10 - Midnight Panel
+darker_bg = "#1F1D3C" # base11 - Rorschach Ink
+bright_red = "#D8979A" # base12 - Blood on Paper
+bright_yellow = "#D2833B" # base13 - Alarm Amber
+bright_green = "#A8BFB8" # base14 - Faded Evidence
+bright_cyan = "#8EB3C0" # base15 - Rainlit Cyan
+bright_blue = "#64A2BD" # base16 - Electric Glass
+bright_magenta = "#B1A9C2" # base17 - Mauve Flash
